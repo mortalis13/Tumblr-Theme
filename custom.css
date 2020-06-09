@@ -1,0 +1,262 @@
+/* === Header ===*/
+.nav-wrapper.nav-fixed {
+  position: relative;
+}
+
+.no-image #header {
+  margin-top: 90px;
+  padding-top: 0px;
+}
+/* --- no iframe header ---*/
+.tmblr-iframe {
+  display: none;
+}
+.no-image #header {
+  margin-top: 0px;
+  padding-top: 35px;
+}
+/*-------------------------*/
+
+.avatar-wrapper {
+  display: inline-block;
+  position: relative;
+  left: -10px;
+  top: 0;
+  margin-left: 0 !important;
+}
+.avatar-wrapper:active {
+  transform: none;
+}
+.user-avatar {
+  width: 90px;
+  height: 90px;
+  background-size: 90px 90px;
+}
+.avatar-style-square .user-avatar {
+  -webkit-box-shadow: 0 0 0 4px #bfbab8 !important;
+  box-shadow: 0 0 0 4px #bfbab8 !important;
+}
+
+.title-group {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  left: 30px;
+  top: -26px;
+}
+
+.blog-title {
+  margin: 0;
+  line-height: 1;
+}
+.blog-title a {
+  display: inline-block;
+  border-bottom: 4px solid #fff0;
+  padding-bottom: 4px;
+}
+.blog-title a:hover {
+  border-bottom: 4px solid #777;
+}
+.blog-title a:active {
+  transform: none;
+}
+
+.tag-page-wrap {
+  text-align: center;
+  margin: 0 auto;
+}
+.tag-page-wrap .tag-page-name {
+  font-size: 26px;
+  color: #ccc;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tag-page-wrap .tag-page-name:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* === Content ===*/
+#posts {
+  margin-top: 15px;
+}
+#posts article {
+  color: #fff;
+  border: 2px solid #fff8;
+  border-radius: 4px;
+}
+.post-wrapper {
+  background: #353535;
+  border-radius: 4px;
+}
+.post-header {
+  display: block;
+  padding: 8px 10px;
+  min-height: 30px;
+}
+.post-header a {
+  color: #ddd;
+}
+.post-header a:hover .blog-name-text {
+  text-decoration: underline;
+}
+.reblog-list .post-reblog-header .post-tumblelog-name {
+  color: #ffea3d;
+}
+.reblog-list .post-reblog-header .post-tumblelog-name:hover {
+  text-decoration: underline;
+}
+.link-wrapper .link {
+  background: #555;
+  color: #fff;
+}
+.post .post-extra {
+  margin-bottom: 0;
+}
+.video .post-extra.has-reblog, .video .post-extra.has-source, .video .post-extra.has-tags {
+  margin-top: 0px;
+}
+.post-content .caption {
+  padding: 15px 20px !important;
+  margin: 0 !important;
+  /*border: 0 !important;*/
+}
+.post-content .caption:empty {
+  padding: 0 !important;
+}
+.main > .date-notes {
+  /*display: none;*/
+  /*display: block;*/
+  width: auto;
+}
+
+/* -- Single Post -- */
+.permalink .main {
+  max-width: 600px !important;
+}
+.notes-wrapper {
+  /*display: block;*/
+  margin-bottom: 25px;
+  background: #fff0;
+  border-radius: 4px;
+  border: 2px solid #fff8;
+  box-shadow: none;
+}
+.notes-wrapper .notes {
+  padding: 8px 0px;
+  background: #353535;
+  color: #fff;
+  overflow: auto;
+}
+.notes-wrapper .notes .note {
+  padding: 10px 20px;
+  color: #ddd;
+}
+.notes-wrapper .notes .note a {
+  color: #fff;
+}
+.post-footer .panel {
+  margin-bottom: 0;
+}
+
+.post-extra .source-link {
+  color: #eee;
+}
+.post-extra .source-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.post-extra.has-reblog.has-tags,
+.post-extra.has-reblog.has-source {
+  margin-top: 15px !important;
+}
+.post-extra.has-source .tags-list {
+  margin-top: 0px;
+}
+.photo .post-extra.has-reblog,
+.photo .post-extra.has-source,
+.photo .post-extra.has-tags {
+    margin-top: 15px;
+}
+
+
+/* -- Misc -- */
+.reblog-list {
+  margin-bottom: 0;
+}
+
+.date-notes .post-date.post-date {
+  display: inline-block;
+}
+
+.tmblr-full > video {
+  height: 100%;
+  width: 100%;
+}
+
+
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  float: none !important;
+  display: inline-block;
+  min-width: 120px;
+  color: #fff !important;
+  background: #464d53;
+  margin: 0 10px 30px;
+  border: 1px solid #8e9ea8;
+}
+#pagination a:hover {
+  background: #3b4248;
+}
+#pagination a:active {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+#pagination a::after {
+  /*top: 16px !important;*/
+}
+#pagination a.next::after {
+  border-left-color: #fff !important;
+  right: 8px !important;
+}
+#pagination a.previous::after {
+  border-right-color: #fff !important;
+  left: 8px !important;
+}
+
+
+/* === @Media === */
+@media screen and (max-device-width: 568px) {
+  
+.tmblr-iframe-overlay.tmblr-iframe-full-width .no-image:not(.avatar-hidden) #header {
+  margin-top: 0px;
+  padding-top: 30px !important;
+}
+#posts.content {
+  padding: 1px 10px;
+}
+#posts article {
+  margin-bottom: 20px;
+}
+.blog-title {
+  font-size: 54px;
+}
+.photo-wrapper:not(.high-res) + .caption {
+  border-top: 1px solid #efefef !important;
+}
+.post-extra.has-source,
+.post-extra.has-tags {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+.with-caption + .post-extra.has-source,
+.with-caption + .post-extra.has-tags {
+  margin-top: 0 !important;
+}
+
+}
