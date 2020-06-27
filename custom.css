@@ -77,6 +77,10 @@
 }
 
 /* === Content ===*/
+.sidebar {
+  display: none !important;
+}
+
 #posts {
   margin-top: 15px;
 }
